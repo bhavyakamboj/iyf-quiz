@@ -41,7 +41,7 @@
           <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardText>
-            <Button 
+            <Button className="option"
               id={id} 
               color={this.state.answered?this.getColor(1):"primary"} 
               size="lg"
@@ -58,7 +58,7 @@
             
             <br/>
             
-            <Button 
+            <Button className="option"
               id={id} 
               color={this.state.answered?this.getColor(2):"primary"} 
               size="lg"
@@ -75,7 +75,7 @@
 
             <br/>
             
-            <Button 
+            <Button className="option"
               id={id} 
               color={this.state.answered?this.getColor(3):"primary"} 
               size="lg"
@@ -92,7 +92,7 @@
 
             <br/>
             
-            <Button 
+            <Button className="option"
               id={id} 
               color={this.state.answered?this.getColor(4):"primary"} 
               size="lg"

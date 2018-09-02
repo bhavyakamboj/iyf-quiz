@@ -48,7 +48,8 @@ ul
   margin-bottom: 0px !important;
 }
 
-#credits {
+#credits 
+{
   text-align: right;
 }
 
@@ -58,7 +59,14 @@ ul
   margin-left: 8em;
 }
 
-#score {
+#score 
+{
   margin-top: -1.5em;
   margin-left: 8em;
 }
+
+/* .option
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+} */

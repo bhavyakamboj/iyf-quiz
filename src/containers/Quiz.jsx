@@ -35,7 +35,7 @@ class Quiz extends Component{
                             }} id="score">Score : <span ref="score">0</span>/{NUMBER_OF_QUESTIONS}</Button>
                     </div>
                 </div>
-                <ul>
+                <ul id="questions">
                 {
                  (!questions)
                  ? <li>Loading...</li>
@@ -52,7 +52,7 @@ class Quiz extends Component{
         <div id="footer" style={{backgroundColor:"#ff9933"}}>
             <Card>
             <CardBody>
-                <CardText><span id="credits">In the service of devotees, created by <a href="https://www.linkedin.com/in/bhavyakamboj/">Bhavya Kamboj</a></span></CardText>
+                <CardText><span id="credits">In the service of devotees, created by <a href="https://www.linkedin.com/in/bhavyakamboj/" target="_blank">Bhavya Kamboj</a></span></CardText>
                 </CardBody>
             </Card>
         </div>
