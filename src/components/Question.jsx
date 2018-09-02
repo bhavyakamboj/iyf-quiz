@@ -16,7 +16,7 @@
       let { options, answer } = this.props.question.data;
         options[answer-1]==options[number-1]?this.setState({correct:1}):this.setState({correct:0});
         this.setState({answered:true});
-        console.log(this.state.answered,this.state.correct);  
+        //console.log(this.state.answered,this.state.correct);  
         if(options[answer-1]===options[number-1]){
           return 1;
         }
@@ -33,11 +33,11 @@
     render(){
       let { id } = this.props.question;
       let {title, options, answer} = this.props.question.data;
-      console.log(id,title,options,answer);
+      //console.log(id,title,options,answer);
 
     return (
       <div>
-        <Card>
+        <Card >
           <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardText>
@@ -48,7 +48,7 @@
               onClick={
                 (event)=>{
                   event.preventDefault();
-                  this.props.onAnswer(parseInt(this.findAnswer(1)));
+                  this.findAnswer(1);
                 }
               }
               disabled={this.state.answered}
@@ -65,7 +65,7 @@
               onClick={
                 (event)=>{
                   event.preventDefault();
-                  this.props.onAnswer(parseInt(this.findAnswer(2)))
+                  this.findAnswer(2);
                 }
               }
               disabled={this.state.answered}
@@ -82,7 +82,7 @@
               onClick={
                 (event)=>{
                   event.preventDefault();
-                  this.props.onAnswer(parseInt(this.findAnswer(3)));  
+                  this.findAnswer(3);  
                 }
               }
               disabled={this.state.answered}
@@ -99,7 +99,7 @@
               onClick={
                 (event)=>{
                   event.preventDefault();
-                  this.props.onAnswer(parseInt(this.findAnswer(4)));  
+                  this.findAnswer(4);  
                 }
               }
               disabled={this.state.answered}
@@ -111,9 +111,9 @@
             
             </CardText>
             <CardSubtitle>
-              <p class="score">
+              <p className="score">
                 <strong>
-                  {this.state.correct==1?<span className="correct">Correct answer</span>:this.state.correct===0?<span className="incorrect">Incorrect answer</span>:""}
+                  {this.state.correct==1?<span className="correct" ref="correct"><img src="../correct.svg"  width="25px" height="25px"/>Correct answer</span>:this.state.correct===0?<span className="incorrect" ref="incorrect"><img src="../incorrect.svg" width="25px" height="25px"/>Incorrect answer</span>:""}
                 </strong>
               </p>
             </CardSubtitle>

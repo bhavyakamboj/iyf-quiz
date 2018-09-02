@@ -167,7 +167,7 @@ var allQuestions = [{
     },
     {
         "title": "Which one is not one of three kinds of miseries or Kleshas in the material world?",
-        "options": ["Adhi-daivika","Adhyatmika","Adhyayan",""],
+        "options": ["Adhi-daivika","Adhyatmika","Adhyayan","Adhi-bhautika"],
         "answer": 3
     },
     {

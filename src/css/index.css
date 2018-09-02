@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-image: url("../temple.jpg"); /* The image used */
   background-size: cover;
   background-position: center center;
@@ -9,6 +9,13 @@ body {
   background-repeat: no-repeat;
   min-height: 640px;
   z-index: -10;
+}
+
+.heading {
+  font-weight: 700;
+}
+.subheading {
+  font-weight: 300;
 }
 
 .jumbotron
@@ -21,4 +28,37 @@ body {
 {
   opacity: 1 !important;
   filter: alpha(opacity=50); 
+}
+
+#logo
+{
+  max-width: 50px;
+  max-height: 50px;
+  margin-top: -25px;
+}
+
+#header 
+{
+  text-align: center;
+}
+
+ul
+{
+  padding-left: 0px;
+  margin-bottom: 0px !important;
+}
+
+#credits {
+  text-align: right;
+}
+
+#restartButton
+{
+  margin-top: -1.5em;
+  margin-left: 8em;
+}
+
+#score {
+  margin-top: -1.5em;
+  margin-left: 8em;
 }
