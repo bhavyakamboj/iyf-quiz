@@ -54,6 +54,11 @@ export default class Example extends React.Component {
               </NavLink>
               </NavItem>
               <NavItem>
+              <NavLink href="/quiz" hidden={this.props.timeLeft>0}>
+              <div className="btn btn-primary" style={{fontSize:"1em",verticalAlign: "center"}}>Restart Quiz</div>
+              </NavLink>
+              </NavItem>
+              <NavItem>
               </NavItem>
             </Nav>
           </Collapse>
