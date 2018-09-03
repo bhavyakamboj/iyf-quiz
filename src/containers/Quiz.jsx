@@ -18,6 +18,13 @@ class Quiz extends Component{
         return ;
     }
 
+    componentDidMount(){
+        setInterval(()=>{
+            let score = document.getElementsByClassName("correct").length;
+                            this.refs.score.innerHTML = score;
+        },300);
+    }
+
     render(){
         return(
             <div>
@@ -29,10 +36,7 @@ class Quiz extends Component{
                         <Button href="/quiz" target="_self" color="primary" className="btn btn-primary" id="restartButton">Restart Quiz</Button>
                     </div>
                     <div className="d-inline">
-                        <Button onClick={()=>{
-                            let score = document.getElementsByClassName("correct").length;
-                            this.refs.score.innerHTML = score;
-                            }} id="score">Score : <span ref="score">0</span>/{NUMBER_OF_QUESTIONS}</Button>
+                        <Button id="score">Score : <span ref="score">0</span>/{NUMBER_OF_QUESTIONS}</Button>
                     </div>
                 </div>
                 <ul id="questions">
