@@ -65,8 +65,12 @@ ul
   margin-left: 8em;
 }
 
-/* .option
+#questions
 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-} */
+  margin-top: 4em;
+}
+
+span {
+  display:table; /* Enable line-wrapping in IE8+ */
+  white-space:normal; /* Enable line-wrapping in old versions of some other browsers */
+}

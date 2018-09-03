@@ -41,7 +41,7 @@
           <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardText>
-            <Button className="option"
+            <Button className="option col-sm-6"
               id={id} 
               color={this.state.answered?this.getColor(1):"primary"} 
               size="lg"
@@ -58,7 +58,7 @@
             
             <br/>
             
-            <Button className="option"
+            <Button className="option col-sm-6"
               id={id} 
               color={this.state.answered?this.getColor(2):"primary"} 
               size="lg"
@@ -75,7 +75,7 @@
 
             <br/>
             
-            <Button className="option"
+            <Button className="option col-sm-6"
               id={id} 
               color={this.state.answered?this.getColor(3):"primary"} 
               size="lg"
@@ -92,7 +92,7 @@
 
             <br/>
             
-            <Button className="option"
+            <Button className="option col-sm-6"
               id={id} 
               color={this.state.answered?this.getColor(4):"primary"} 
               size="lg"
@@ -113,7 +113,7 @@
             <CardSubtitle>
               <p className="score">
                 <strong>
-                  {this.state.correct==1?<span className="correct" ref="correct"><img src="../correct.svg"  width="25px" height="25px"/>Correct answer</span>:this.state.correct===0?<span className="incorrect" ref="incorrect"><img src="../incorrect.svg" width="25px" height="25px"/>Incorrect answer</span>:""}
+                  {this.state.correct==1?<span className="correct" ref="correct" style={{fontSize: "1.5em"}}><img src="../correct.svg"  width="50px" height="50px"/>Correct answer</span>:this.state.correct===0?<span className="incorrect" ref="incorrect"  style={{fontSize: "1.5em"}}><img src="../incorrect.svg" width="50px" height="50px"/>Incorrect answer</span>:""}
                 </strong>
               </p>
             </CardSubtitle>
