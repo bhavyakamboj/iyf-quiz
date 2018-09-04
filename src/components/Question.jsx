@@ -14,6 +14,7 @@
 
     findAnswer(number){
       let { options, answer } = this.props.question.data;
+      //console.log("options in question",options)
         options[answer-1]==options[number-1]?this.setState({correct:1}):this.setState({correct:0});
         this.setState({answered:true});
         //console.log(this.state.answered,this.state.correct);  
@@ -31,9 +32,10 @@
     }
 
     render(){
+      //console.log(this.props.question);
       let { id } = this.props.question;
       let {title, options, answer} = this.props.question.data;
-      //console.log(id,title,options,answer);
+      title = `${id+1}. ${title}`;
 
     return (
       <div>
